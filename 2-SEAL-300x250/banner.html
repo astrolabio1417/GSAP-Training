@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        @font-face {
+            font-family: 'FoxtelText';
+            src: url('https://s0.2mdn.net/creatives/assets/2626062/FoxtelText-Regular.woff2') format('woff2'),
+                url('https://s0.2mdn.net/creatives/assets/2626062/FoxtelText-Regular.woff') format('woff'),
+                url('https://s0.2mdn.net/creatives/assets/2626062/FoxtelText-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            outline: 0;
+            padding: 0;
+            margin: 0;
+            font-family: 'FoxtelText', arial;
+            font-variant-ligatures: none;
+            background-color: #ffffff;
+            color: white;
+        }
+
+        .banner-container {
+            position: relative;
+            overflow: hidden;
+            width: 300px;
+            height: 250px;
+            background: #fff;
+            border: 1px solid #000;
+            opacity: 0;
+        }
+
+        .frame {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner-container">
+        <svg class="frame" id="frame-1" width="300" height="250" viewbox="0 0 300 250" version="1.1"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <image id="frame1-bg" href="bg.jpg" alt="bg" />
+            <image id="frame1-seal" href="seal.png" alt="seal" />
+            <image class="frame-item-hidden" href="frame1-text1.svg" alt="frame1-text1" />
+            <image class="frame-item-hidden" href="frame1-text2.svg" alt="frame1-text2" />
+            <image class="frame-item-hidden" href="frame1-text3.svg" alt="frame1-text3" />
+        </svg>
+        <svg class="frame" id="frame-2" width="300" height="250" viewbox="0 0 300 250" version="1.1"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <image id="frame2-bg" href="orangebg.jpg" alt="orange-bg" />
+            <image id="frame2-iq3" href="iq3.png" alt="iq3" />
+            <image class="frame-item-hidden" href="frame2-text1.svg" alt="frame2-text1" />
+            <image class="frame-item-hidden" href="frame2-text2.svg" alt="frame2-text2" />
+            <image class="frame-item-hidden" href="frame2-text3.svg" alt="frame2-text3" />
+            <foreignObject id="frame2-text" y="87%" width="100%" height="100%"
+                style="padding: 0 12%; font-size: 0.5rem; text-align: center;">
+                Requires Sports HD subscription with iQ4 box, compatible 4K TV and HDMI cable. Not available to all
+                homes.
+            </foreignObject>
+        </svg>
+        <svg class="frame" id="frame-3" width="300" height="250" viewbox="0 0 300 250" version="1.1"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <image class="frame-item-hidden" href="frame3-text1.svg" alt="frame3-text1" />
+            <image class="frame-item-hidden" href="frame3-text2.svg" alt="frame3-text2" />
+            <image class="frame-item-hidden" href="frame3-text3.svg" alt="frame3-text3" />
+            <image class="frame-item-hidden" href="frame3-text4.svg" alt="frame3-text4" />
+        </svg>
+        <svg class="frame" id="frame-4" width="300" height="250" viewbox="0 0 300 250" version="1.1"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <image class="frame-item-hidden" href="frame4-text1.svg" alt="frame4-text1" />
+            <image class="frame-item-hidden" href="frame4-text2.svg" alt="frame4-text2" />
+            <image class="frame-item-hidden" href="frame4-text3.svg" alt="frame4-text3" />
+            <image class="frame-item-hidden" href="frame4-btn.svg" alt="button" />
+            <image href="frame4-logo.svg" alt="logo" />
+        </svg>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="banner.js"></script>
+</body>
+
+</html>

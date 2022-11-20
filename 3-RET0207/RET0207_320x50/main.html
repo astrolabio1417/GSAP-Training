@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #banner {
+            border: 1px solid #333333;
+            background-color: #f2410a;
+        }
+
+        .frame {
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner-container">
+        <svg id="banner" width="320" height="50" viewbox="0 0 320 50" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+                <mask id="border-mask">
+                    <rect id="svg-mask-poly2" x="0" y="-971" width="747" height="2700" transform="rotate(15)"
+                        style="fill: #fff" />
+                </mask>
+                <mask id="border-mask-3">
+                    <rect id="svg-mask-poly3" x="0" y="-971" width="747" height="2700" transform="rotate(15)"
+                        style="fill: #fff" />
+                </mask>
+                <mask id="border-mask-4">
+                    <rect id="svg-mask-poly4" x="0" y="-971" width="747" height="2700" transform="rotate(15)"
+                        style="fill: #fff" />
+                </mask>
+                <mask id="border-mask-5">
+                    <rect id="svg-mask-poly5" x="0" y="-971" width="747" height="2700" transform="rotate(15)"
+                        style="fill: #fff" />
+                </mask>
+            </defs>
+            <g class="frame" id="frame-1">
+                <image href="img01.png" />
+                <image class="disc" href="disc01.png" />
+                <image class="ribbon" href="ribbon01.png" />
+            </g>
+            <g mask="url(#border-mask)" class="frame" id="frame-2">
+                <image class="img" href="img01.jpg" />
+                <image class="disc" href="disc02.png" />
+                <image class="ribbon" href="ribbon02.png" />
+            </g>
+            <g mask="url(#border-mask-3)" class="frame" id="frame-3">
+                <image class="img" href="img02.jpg" />
+                <image class="ribbon" href="ribbon02.png" />
+            </g>
+            <g mask="url(#border-mask-4)" class="frame" id="frame-4">
+                <image class="img" href="img03.jpg" />
+                <image class="ribbon " href="ribbon02.png" />
+            </g>
+            <g mask="url(#border-mask-5)" class="frame" id="frame-5">
+                <image class="img" href="txt02.png" />
+                <image id="disc01" href="disc01.png" />
+                <image class="ribbon " href="ribbon03.png" />
+            </g>
+            <g>
+                <image id="banner-logo" xlink:href="foxtelLogo.png" />
+            </g>
+        </svg>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="main.js">
+    </script>
+</body>
+
+</html>
